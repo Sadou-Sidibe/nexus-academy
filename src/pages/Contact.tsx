@@ -81,21 +81,20 @@ export default function Contact() {
             </div>
 
             <div className="mt-8 overflow-hidden rounded-2xl border border-gray-100 shadow-soft">
-              <a
-                href="https://www.openstreetmap.org/?mlat=5.360&mlon=-4.000#map=15/5.360/-4.000"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Ouvrir la carte d'Abidjan dans un nouvel onglet"
-              >
-                <img
-                  src="https://staticmap.openstreetmap.de/staticmap.php?center=5.360,-4.000&zoom=14&size=600x256&maptype=mapnik&markers=5.360,-4.000,red-pushpin"
-                  alt="Carte montrant l'emplacement de Nexus Academy à Cocody Angré, Abidjan"
-                  width="600"
-                  height="256"
+              <div className="h-64 w-full overflow-hidden bg-gray-100">
+                <iframe
+                  title="Localisation de Nexus Academy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-4.025%2C5.345%2C-3.995%2C5.375&layer=mapnik&marker=5.360,-4.000"
+                  className="h-full w-full border-0"
                   loading="lazy"
-                  className="h-64 w-full object-cover"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  scrolling="no"
                 />
-              </a>
+              </div>
+              <div className="border-t border-gray-100 bg-white px-4 py-3 text-sm text-gray-600">
+                <p className="font-medium text-gray-900">Nexus Academy</p>
+                <p>Cocody Angré 8e Tranche, Abidjan, Côte d’Ivoire</p>
+              </div>
             </div>
           </div>
           <div className="card">
